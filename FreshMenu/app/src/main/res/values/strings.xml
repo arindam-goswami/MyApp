@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FreshMenu</string>
+    <string name="price">$10.40</string>
+    <string name="title">Food Title</string>
+    <string name="desc">Food Description</string>
+    <string name="type">(Veg/Non Veg)</string>
 </resources>

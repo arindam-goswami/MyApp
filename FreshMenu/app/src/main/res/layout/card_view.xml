@@ -5,11 +5,9 @@
     android:layout_height="wrap_content"
     android:id="@+id/cv"
     android:layout_margin="16dp">
-
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -35,7 +33,7 @@
                 android:background="@color/transparent"
                 android:textColor="@color/white"
                 android:padding="5dp"
-                android:text="$10.40"/>
+                android:text="@string/price"/>
             <ImageView
                 android:id="@+id/button"
                 android:layout_width="wrap_content"
@@ -46,7 +44,7 @@
                 android:id="@+id/title"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food Title"
+                android:text="@string/title"
                 android:layout_marginTop="10dp"
                 android:textColor="@color/white"
                 android:layout_below="@+id/price"
@@ -55,7 +53,7 @@
                 android:id="@+id/desc"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Food Description"
+                android:text="@string/desc"
                 android:textColor="@color/white"
                 android:layout_below="@+id/title"
                 android:layout_alignParentRight="true" />
@@ -64,12 +62,10 @@
                 android:id="@+id/type"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="(Veg/Non Veg)"
+                android:text="@string/type"
                 android:textColor="@color/white"
                 android:layout_below="@+id/desc"
                 android:layout_alignParentRight="true" />
         </RelativeLayout>
     </FrameLayout>
-
-
 </android.support.v7.widget.CardView>
