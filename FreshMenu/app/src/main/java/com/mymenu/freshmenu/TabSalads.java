@@ -14,7 +14,9 @@ public class TabSalads extends Fragment {
     private RecyclerView mRecyclerView;
     private RecyclerView.Adapter mAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
-    int images[]={R.drawable.seven,R.drawable.eight,R.drawable.nine};
+    FoodItem images[]={new FoodItem(R.drawable.seven,"salad1"),
+            new FoodItem(R.drawable.eight,"Salad2"),
+            new FoodItem(R.drawable.nine,"Salad3")};
 
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -23,7 +25,7 @@ public class TabSalads extends Fragment {
         mRecyclerView.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(getActivity());
         mRecyclerView.setLayoutManager(mLayoutManager);
-        mAdapter = new MyAdapter(images);
+        mAdapter = new MyAdapter(images, getActivity());
         mRecyclerView.setAdapter(mAdapter);
         return v;
     }
